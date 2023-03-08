@@ -6,3 +6,5 @@ from .models import *
 admin.site.register(Building)
 admin.site.register(Floor)
 admin.site.register(Rows)
+admin.site.register(Coloumn)
+admin.site.register(Vehicle)

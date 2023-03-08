@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Building, Rows, Floor, Coloumn
+from .models import Building, Rows, Floor, Coloumn, Vehicle
 
 #creating serializers.
 
@@ -19,3 +19,12 @@ class RowsSerializers(serializers.ModelSerializer):
         model=Rows
         fields="__all__"
 
+class ColoumnSerializers(serializers.ModelSerializer):
+    class Meta:
+        model=Coloumn
+        fields="__all__"
+
+class VehicleSerializers(serializers.ModelSerializer):
+    class Meta:
+        model=Vehicle
+        fields="__all__"
